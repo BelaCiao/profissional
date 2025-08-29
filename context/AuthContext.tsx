@@ -10,8 +10,8 @@ interface AuthContextType {
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // In a real app, these would come from environment variables.
-const MOCK_USER = 'admin';
-const MOCK_PASS = 'password123';
+const MOCK_USER = 'maicongn';
+const MOCK_PASS = 'Bializgn@301192';
 
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
