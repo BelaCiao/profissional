@@ -1,11 +1,9 @@
 import React from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { usePortfolio } from '../hooks/usePortfolio';
 
 export const Header: React.FC = () => {
   const { isAuthenticated, logout } = useAuth();
-  const { portfolioData } = usePortfolio();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -34,11 +32,20 @@ export const Header: React.FC = () => {
     { id: 'contact', label: 'Contato' },
   ];
 
+  // WhatsApp number from portfolio.config.ts: (53) 9 9933-5369
+  // Cleaned for URL: 5553999335369
+  const whatsappUrl = "https://wa.me/5553999335369";
+
   return (
     <header className="bg-slate-900 bg-opacity-80 backdrop-blur-md sticky top-0 z-50 w-full">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#/" onClick={() => scrollToSection('hero')} className="text-xl font-bold text-white hover:text-cyan-400 transition-colors">
-          {portfolioData.name}
+        <a 
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl font-bold text-white hover:text-cyan-400 transition-colors"
+        >
+          Maicon Góis | Portfólio Digital
         </a>
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map(link => (

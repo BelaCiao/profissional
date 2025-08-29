@@ -75,7 +75,7 @@ export const portfolioData: PortfolioData = {
       period: "Conclusão prevista: 12/2025",
     },
     {
-      course: "Pós-Graduação em Engenharia de Redes e Telecomunicações",
+      course: "PROJETOS E ARQUITETURAS EM CLOUD COMPUTING",
       institution: "Anhanguera",
       period: "Conclusão prevista: 04/2026",
     },

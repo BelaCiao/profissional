@@ -3,7 +3,7 @@ import {
   FaReact, FaDocker, FaGithub, FaLinkedin, FaExternalLinkAlt, FaLock, 
   FaNetworkWired, FaRoute, FaSatelliteDish, FaShieldAlt, FaLanguage, 
   FaPhone, FaEnvelope, FaMapMarkerAlt, FaChartLine, FaProjectDiagram, 
-  FaCloud, FaCogs, FaAws, FaServer, FaPlug, FaBolt, FaHtml5, FaLinux
+  FaCloud, FaCogs, FaAws, FaServer, FaPlug, FaBolt, FaHtml5, FaLinux, FaWhatsapp
 } from 'react-icons/fa';
 import { 
   SiTypescript, SiTailwindcss, SiVercel, SiGooglegemini, SiSupabase, 
@@ -35,6 +35,7 @@ const iconMap: { [key: string]: React.ElementType } = {
   FaBolt,
   FaHtml5,
   FaLinux,
+  FaWhatsapp,
   SiTypescript,
   SiTailwindcss,
   SiVercel,
