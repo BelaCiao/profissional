@@ -3,11 +3,14 @@ import {
   FaReact, FaDocker, FaGithub, FaLinkedin, FaExternalLinkAlt, FaLock, 
   FaNetworkWired, FaRoute, FaSatelliteDish, FaShieldAlt, FaLanguage, 
   FaPhone, FaEnvelope, FaMapMarkerAlt, FaChartLine, FaProjectDiagram, 
-  FaCloud, FaCogs, FaAws, FaServer, FaPlug, FaBolt, FaHtml5, FaLinux, FaWhatsapp
+  FaCloud, FaCogs, FaAws, FaServer, FaPlug, FaBolt, FaHtml5, FaLinux, FaWhatsapp,
+  FaBroadcastTower, FaExclamationTriangle, FaBell, FaEthernet, FaCertificate,
+  FaWaveSquare, FaBuilding, FaTerminal, FaFileInvoice, FaComment, FaSignal
 } from 'react-icons/fa';
 import { 
   SiTypescript, SiTailwindcss, SiVercel, SiGooglegemini, SiSupabase, 
-  SiPostgresql, SiNodedotjs, SiNextdotjs, SiVite, SiJavascript, SiFirebase 
+  SiPostgresql, SiNodedotjs, SiNextdotjs, SiVite, SiJavascript, SiFirebase,
+  SiGrafana, SiCisco
 } from 'react-icons/si';
 
 const iconMap: { [key: string]: React.ElementType } = {
@@ -47,6 +50,20 @@ const iconMap: { [key: string]: React.ElementType } = {
   SiVite,
   SiJavascript,
   SiFirebase,
+  // New icons for NOC profile
+  SiGrafana,
+  FaBroadcastTower,
+  FaExclamationTriangle,
+  FaBell,
+  FaEthernet,
+  FaCertificate,
+  FaWaveSquare,
+  FaBuilding,
+  FaTerminal,
+  FaFileInvoice,
+  FaComment,
+  FaSignal,
+  SiCisco
 };
 
 interface IconProps {

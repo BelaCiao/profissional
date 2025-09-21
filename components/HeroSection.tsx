@@ -26,13 +26,13 @@ export const HeroSection: React.FC = () => {
         <p className="text-slate-400 max-w-3xl mx-auto mb-8">
           {portfolioData.summary}
         </p>
-        <div className="flex justify-center gap-6 mb-10">
-          <a href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-400 hover:text-cyan-400 transition-colors transform hover:scale-110">
-            <Icon name="FaGithub" className="w-9 h-9" />
-          </a>
+        <div className="flex justify-center items-center gap-6 mb-10">
           <a href={portfolioData.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-slate-400 hover:text-cyan-400 transition-colors transform hover:scale-110">
             <Icon name="FaLinkedin" className="w-9 h-9" />
           </a>
+          <div className="text-slate-400" title="Competências em Cisco">
+             <Icon name="SiCisco" className="w-9 h-9" />
+          </div>
         </div>
         <button 
           onClick={handleScrollToContact}

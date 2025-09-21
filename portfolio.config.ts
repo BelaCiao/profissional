@@ -2,102 +2,85 @@ import { PortfolioData } from './types';
 
 export const portfolioData: PortfolioData = {
   name: "Maicon Góis do Nascimento",
-  title: "Arquiteto de Soluções & Gestor de Projetos de TI",
-  summary: "Profissional de tecnologia com mais de 7 anos de experiência, em transição de uma sólida carreira em infraestrutura de redes para Arquitetura de Soluções em Nuvem e Desenvolvimento de SaaS. Possuo uma visão 360° que conecta a infraestrutura física (redes, servidores) à camada de aplicação (software, APIs, IA), permitindo-me projetar e construir soluções digitais completas, seguras e escaláveis. Busco oportunidades para aplicar minha capacidade de transformar desafios de negócio em produtos tecnológicos de alto impacto.",
-  avatarUrl: "https://avatar.iran.liara.run/public/boy?username=maicon",
+  title: "Profissional de Operações de Rede (NOC)",
+  summary: "Profissional de Redes e Infraestrutura com experiência em operações de campo, manutenção de POPs e data centers. Atualmente em transição para a área de Monitoramento de Redes (NOC), com conhecimento em Zabbix, Grafana e estudos para a certificação CCNA. Perfil analítico, focado e com grande capacidade de aprendizado.",
+  avatarUrl: "https://placehold.co/160x160/06b6d4/FFFFFF/png?text=MG",
   contact: {
     phone: "(53) 9 9933-5369",
-    email: "maicongn@hotmail.com",
-    location: "Rio Grande-RS, Brasil",
+    email: "maicongois@gmail.com",
+    location: "Brasil",
   },
+  // FIX: Add missing 'github' property to the 'socials' object
   socials: {
     linkedin: "https://www.linkedin.com/in/maicongois/",
-    github: "https://github.com/maicongois",
+    github: "https://github.com/maicongois"
   },
   skills: [
     {
-      title: "Cloud & Arquitetura",
+      title: "Monitoramento e Operações (NOC)",
       skills: [
-        { name: "Arquitetura de Soluções", icon: "FaProjectDiagram" },
-        { name: "Cloud Computing", icon: "FaCloud" },
-        { name: "Desenvolvimento SaaS", icon: "FaCogs" },
-        { name: "AWS (em estudo)", icon: "FaAws" },
-        { name: "Vercel", icon: "SiVercel" },
-        { name: "Render", icon: "FaServer" },
-        { name: "Supabase", icon: "SiSupabase" },
+        { name: "Zabbix", icon: "FaChartLine" },
+        { name: "Grafana", icon: "SiGrafana" },
+        { name: "Netcool", icon: "FaBroadcastTower" },
+        { name: "Gestão de Incidentes (ITSM)", icon: "FaExclamationTriangle" },
+        { name: "Análise de Alarmes", icon: "FaBell" },
       ],
     },
     {
-      title: "Desenvolvimento & Backend",
+      title: "Redes e Roteamento",
       skills: [
-        { name: "Node.js", icon: "SiNodedotjs" },
-        { name: "APIs RESTful", icon: "FaPlug" },
-        { name: "JavaScript", icon: "SiJavascript" },
-        { name: "Integração de APIs", icon: "FaBolt" },
-        { name: "PostgreSQL", icon: "SiPostgresql" },
-        { name: "Firebase", icon: "SiFirebase" },
+        { name: "TCP/IP", icon: "FaNetworkWired" },
+        { name: "Switching (VLANs, STP)", icon: "FaEthernet" },
+        { name: "Roteamento (Estático, OSPF)", icon: "FaRoute" },
+        { name: "CCNA (em formação)", icon: "FaCertificate" },
       ],
     },
     {
-      title: "Frontend",
+      title: "Infraestrutura e Hardware",
       skills: [
-        { name: "React.js", icon: "FaReact" },
-        { name: "Next.js", icon: "SiNextdotjs" },
-        { name: "Vite", icon: "SiVite" },
-        { name: "HTML5 & CSS3", icon: "FaHtml5" },
-        { name: "Tailwind CSS", icon: "SiTailwindcss" },
+        { name: "Roteadores Mikrotik", icon: "FaRoute" },
+        { name: "Switches Huawei", icon: "FaServer" },
+        { name: "DWDM", icon: "FaWaveSquare" },
+        { name: "Fibra Óptica (OTDR)", icon: "FaSignal" },
+        { name: "Infra de POPs", icon: "FaBuilding" },
       ],
     },
     {
-      title: "Redes & Infraestrutura",
+      title: "Sistemas e Ferramentas",
       skills: [
-        { name: "Equipamentos Mikrotik/Huawei", icon: "FaRoute" },
-        { name: "Protocolos TCP/IP", icon: "FaNetworkWired" },
-        { name: "Monitoramento (Zabbix)", icon: "FaChartLine" },
-        { name: "Segurança de Redes", icon: "FaShieldAlt" },
-        { name: "Servidores Linux", icon: "FaLinux" },
+        { name: "Linux", icon: "FaLinux" },
+        { name: "ERP Voalle", icon: "FaFileInvoice" },
+        { name: "SZ.chat", icon: "FaComment" },
+        { name: "Shell Script (básico)", icon: "FaTerminal" },
       ],
     },
   ],
-  projects: [
-    {
-      title: "LIA IA - SaaS de CRM com Inteligência Artificial",
-      description: "Idealizei e desenvolvi um SaaS completo para otimizar a conversão de leads de clínicas, utilizando automação com IA. Fui responsável pelo design da arquitetura, desenvolvimento full stack, implementação de segurança e criação de prompts para a IA.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      tags: ["SaaS", "IA", "Next.js", "Node.js", "Supabase", "Vercel", "Render", "Arquitetura"],
-      repoUrl: "https://github.com/maicongois/lia-ia-saas",
-    }
-  ],
-  education: [
-     {
-      course: "Graduação em Gestão da Tecnologia da Informação",
-      institution: "Anhanguera",
-      period: "Conclusão prevista: 12/2025",
-    },
-    {
-      course: "PROJETOS E ARQUITETURAS EM CLOUD COMPUTING",
-      institution: "Anhanguera",
-      period: "Conclusão prevista: 04/2026",
-    },
-  ],
+  projects: [],
+  education: [],
   experience: [
-    {
-      role: "Técnico Assistente de Infraestrutura de Redes",
+     {
+      role: "Analista de NOC / Monitoramento",
       company: "Brasil Tecpar - Àvato",
-      period: "09/2023 - Atualmente",
-      description: "Participo de instalações e manutenções em redes de backbone, sites e data centers. Atuo em projetos de instalação em torres de transmissão e em clientes corporativos de telecomunicações. Suporte na execução de GMUDs.",
+      period: "03/2024 - Atualmente",
+      description: "Atualmente no time de Monitoramento (NOC), aplico minha experiência para analisar alarmes (Zabbix), gerenciar incidentes (Voalle) e garantir a alta disponibilidade da rede, com o objetivo de evoluir para Nível 2.",
+    },
+    {
+      role: "Técnico de Infraestrutura de Campo",
+      company: "Brasil Tecpar - Àvato",
+      period: "09/2023 - 03/2024",
+      description: "Ganhei experiência com infraestrutura de grande porte: manutenção de POPs, configuração de DWDM, switches Huawei L3, fusões ópticas e ativação de clientes corporativos.",
     },
     {
       role: "Técnico de Infraestrutura de Redes",
       company: "OsirNet",
       period: "06/2023 - 09/2023",
-      description: "Atendi demandas técnicas de clientes corporativos e mantive a infraestrutura física de redes. Realizei atividades técnicas de recuperação de sites e trechos de backbone em falha.",
+      description: "Foquei na infraestrutura de redes, realizando atendimento a clientes corporativos e manutenção de equipamentos, com foco na recuperação de sites e na estabilidade do backbone.",
     },
     {
       role: "Técnico de Redes",
       company: "VictoriaNet",
       period: "01/2021 - 06/2023",
-      description: "Atuei em campo com suporte a clientes e manutenção da rede externa. Administrei e configurei filas (Queues) no Mikrotik para controle de banda. Trabalhei com atribuição e gerenciamento de endereçamento IP. Apoio ao monitoramento da rede e resolução de incidentes lógicos, atuando (N1 e N2).",
+      description: "Minha primeira experiência prática em um provedor, atuando em campo e no suporte interno. Aprendi a configurar roteadores Mikrotik e dei os primeiros passos no monitoramento de redes (N1/N2).",
     },
   ],
 };
